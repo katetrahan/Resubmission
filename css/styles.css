@@ -1,0 +1,16 @@
+.jumbotron {
+  text-align: center;
+  background-image: url("https://static.pexels.com/photos/220201/pexels-photo-220201.jpeg")
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.form-group label {
+  color: white;
+}
+
+body{
+  background-color: lightgrey;
+  }
