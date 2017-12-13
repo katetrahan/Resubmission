@@ -2,20 +2,16 @@
 var numbers = function(number) {
   var result = [];
 
+
   for (var index = 0; index <= number ; index += 1) {
         result.push(index);
 
-} return result
+    if (number % 3 === 0) {
+    return "I'm sorry Dave. I'm afraid I can't do that."
 }
 
-
-
-
-
-
-
-
-
+} return result
+}
 
 
 //User Interface Logic
