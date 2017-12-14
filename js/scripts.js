@@ -1,16 +1,21 @@
 // Business Logic
-var numbers = function(number) {
-  var result = [];
+var numbers = function(userNumber) { //taking in num from user
+  var result = []; //declaring and init new array called results
 
 
-  for (var index = 0; index <= number ; index += 1) {
-        result.push(index);
+  for (var index = 0; index <= userNumber ; index += 1) {
+        result.push(index); //push current lap you are on into the array
 
-        if (number % 3 === 0) {
-        return "I'm sorry Dave. I'm afraid I can't do that."
+      if (userNumber % 3 === 0) { //checking if index is div by three, if yes:
+ //push dave
       }
 
-} return result
+      //stuff to consider: use .includes to check if a string includes another string
+      //charAt to to check which char exists at a certain index?
+      //
+  }
+
+  return result; //do not delete me.
 }
 
 
@@ -18,11 +23,12 @@ var numbers = function(number) {
 $(document).ready(function() {
     $("#formOne").submit(function(event) {
       event.preventDefault();
-      var number = parseInt($("input").val()); // userInput;
-      var result= numbers(number);
+      var userNumber = parseInt($("input").val()); // userInput;
+      var result= numbers(userNumber); //result is an array.
+                                      //
 
-
-      $("<li>" + result + "</li>").appendTo("#result");
+//if inside of a loop
+      $("<li>" + result[i] + "</li>").appendTo("#result");
 
 
 
