@@ -1,8 +1,8 @@
 # _Beep Boop_
 
-#### _A web application that takes a number from a user and returns a range of numbers from 0 to the chosen number with a few exceptions._
+#### _A web application that takes a number from a user and returns a range of numbers counting from 0 to the chosen number while replacing 0 as "boop" and 1 as "beep" and numbers divisible by 3 as "I'm sorry Dave, I'm afraid I can't do that" ._
 
-#### By _**{ Kate Trahan}**_
+#### By _**{Kate Trahan}**_
 
 ## Description
 
@@ -12,11 +12,13 @@ _This is an HTML page that uses JavaScript to return a list of numbers from 0 to
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :-------------
-| **Can count up to the provided number** | "5" | [0,1,2,3,4,5] |
-| **Can replace numbers that contain 1 with the word "Boop!"**| "11" | "Boop!" |
-| **Can replace numbers that contain 0 with the word "Beep!"** | "10" | "Beep!" |
-| **Can replace numbers with a sentence | "3" | "Hello"|
-| **Can replace all numbers divisible by 3 with a sentence** | "15" | "Im, sorry, Dave. I am afraid I can't do that" |
+| **Can return 0**| "0" | "0" |
+| **Can return 0 as "beep"**| "0" | "beep" |
+| **Can return 0,1** | "0,1"| "0,1" |
+| **Can return 0,1,2**|"0,1,2" | "0,1,2"|
+| **Can return 0,1,2,3** |"0,1,2,3" | "0,1,2,3"|
+| **Can return 1 as boop**| "1" | "boop" |
+| **Can return numbers divisible by 3 as "I'm sorry Dave, I'm afraid I can't do that"**| "6" |" I'm sorry Dave, I'm afraid I can't do that."|
 
 
 ## Setup/Installation Requirements

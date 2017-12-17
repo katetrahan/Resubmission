@@ -4,17 +4,22 @@ var numbers = function(userNumber) { //taking in num from user
 
 
   for (var index = 0; index <= userNumber ; index += 1) {
-        result.push(index); //push current lap you are on into the array
+    //push current lap you are on into the array
+    var stringNumber = index.toString();// turns index to string in order to use includes.
 
-      if (userNumber % 3 === 0) { //checking if index is div by three, if yes:
- //push dave
-      }
-
-      //stuff to consider: use .includes to check if a string includes another string
-      //charAt to to check which char exists at a certain index?
-      //
+    if (index % 3 === 0 && index > 0) {
+    result.push("I'm sorry Dave, I'm afraid I can't do that"); //checking if index is div by three, if yes:
+    // //push dave
+  } else if (stringNumber.includes("0")) {
+    result.push("beep!");
+  } else if (stringNumber.includes("1")) {
+    result.push("boop!");
+  } else {
+    result.push(index);
   }
 
+
+}
   return result; //do not delete me.
 }
 
@@ -25,12 +30,11 @@ $(document).ready(function() {
       event.preventDefault();
       var userNumber = parseInt($("input").val()); // userInput;
       var result= numbers(userNumber); //result is an array.
-                                      //
+      $("#result").show();                                //
 
-//if inside of a loop
-      $("<li>" + result[i] + "</li>").appendTo("#result");
-
-
-
+      $("<li>" + result + "</li>").appendTo("#result");
+      $("#result").last().click(function() {
+      $("#result").empty();
+})
   })
 });
