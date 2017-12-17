@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an HTML page that uses JavaScript to return a list of numbers from 0 to the inputed number.The application replaces numbers divisible by 3 with the quote "I'm sorry, Dave. I am afraid I can't do that"_
+_This is an HTML page that uses JavaScript to return a list of numbers from 0 to the inputed number.The application replaces numbers including 0 with boop, 1 as beep and numbers divisible by 3 with the quote "I'm sorry, Dave. I am afraid I can't do that"_
 
 
 ### Specs
