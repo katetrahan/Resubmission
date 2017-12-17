@@ -18,7 +18,7 @@ _This is an HTML page that uses JavaScript to return a list of numbers from 0 to
 | **Can return 0,1,2**|"0,1,2" | "0,1,2"|
 | **Can return 0,1,2,3** |"0,1,2,3" | "0,1,2,3"|
 | **Can return 1 as boop**| "1" | "boop" |
-| **Can return numbers divisible by 3 as "I'm sorry Dave, I'm afraid I can't do that"**| "6" |" I'm sorry Dave, I'm afraid I can't do that."|
+| **Can return numbers divisible by 3 as "I'm sorry Dave, I'm afraid I can't do that"**| "3" |"1,2, 'I'm sorry Dave, I'm afraid I can't do that.''"|
 
 
 ## Setup/Installation Requirements
